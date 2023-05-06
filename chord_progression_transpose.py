@@ -1,3 +1,4 @@
+from guitar_chords.note import Note
 def chord_progression_transpose(chord_progression, note):
     chord_semitones = {
         "i": 0,
