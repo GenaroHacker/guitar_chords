@@ -30,7 +30,7 @@ def build_progression(root, chord_progression):
     # Concatenate each key with each value
     result = []
     for chord in chord_progression:
-        result.append([chord[0] + chord[1]])
+        result.append(chord[0] + chord[1])
 
     return result
 
