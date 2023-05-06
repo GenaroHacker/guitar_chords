@@ -1,5 +1,5 @@
 from guitar_chords.note import Note
-def chord_progression_transpose(chord_progression, note):
+def build_progression(root, chord_progression):
     chord_semitones = {
         "i": 0,
         "ii": 2,
@@ -21,7 +21,7 @@ def chord_progression_transpose(chord_progression, note):
             chord[0] = chord_semitones[chord[0]]
 
     # Create an instance of the Note class with the given note
-    note1 = Note(note)
+    note1 = Note(root)
 
     # Transpose each key
     for chord in chord_progression:
