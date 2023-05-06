@@ -2,12 +2,11 @@ from PIL import Image
 import IPython.display as display
 import os
 
-def display_progression(chord_list):
+def display_progression(chord_list, columns=4):
     # Add the prefix and suffix to each item in the list
     chord_list = [f"/content/guitar_chords/chords/{chord}.png" for chord in chord_list]
 
-    # Define the number of columns
-    columns = 4
+    # Calculate the number of rows based on the number of columns
     rows = (len(chord_list) + columns - 1) // columns
 
     # Initialize the new image
